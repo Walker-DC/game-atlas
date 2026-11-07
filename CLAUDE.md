@@ -1,4 +1,4 @@
-# 게임 방향 분석 작업 폴더 (범용, APK 기반)
+# 게임 아틀라스 작업 폴더 (범용, APK 기반)
 
 아무 게임이나 APK와 내부 자료로 방향을 분석하는 폴더입니다.
 
@@ -14,7 +14,7 @@
 | `분석_방식.md` | 진행 방식, 관점, 규칙, APK 분석 한계 |
 | `.claude/skills/새게임/` | `/새게임` — APK 추출 + 설정.json |
 | `.claude/skills/분석/` | `/분석` — 워크플로우 실행과 결과 정리 |
-| `.claude/workflows/game-debate.js` | 분석 워크플로우 (args: home, game, note, base, maxRounds, research, mediateAfter, resume, mediation, verify, verifyMax, debateModel, strongModel, org) — 설계자·검토자는 Sonnet 5.5, 조사·사실 검증·판정자는 Opus 5.5. 같은 설계·같은 반대가 연속 3번 핑퐁하면 판정자가 원본 확인 후 판정(사내 사정만 사용자 중재). 검토자 전 관점 승인 → 사실 검증 → 판정자 확인, 설계자·검토자·판정자 셋이 모두 동의하면 종료 |
+| `.claude/workflows/game-atlas.js` | 분석 워크플로우 (args: home, game, note, base, maxRounds, research, mediateAfter, resume, mediation, verify, verifyMax, debateModel, strongModel, org) — 설계자·검토자는 Sonnet 5.5, 조사·사실 검증·판정자는 Opus 5.5. 같은 설계·같은 반대가 연속 3번 핑퐁하면 판정자가 원본 확인 후 판정(사내 사정만 사용자 중재). 검토자 전 관점 승인 → 사실 검증 → 판정자 확인, 설계자·검토자·판정자 셋이 모두 동의하면 종료 |
 | `도구/근거_대조.py` | 결과 JSON·판정 문서의 로컬 근거(행 번호·인용·자리표시자)를 원본과 기계 대조 — 결과 정리 전에 필수 |
 | `도구/apk_추출.py` | APK/XAPK/APKS/OBB 추출기 |
 | `도구/pc_추출.py` | 설치 완료 PC 클라이언트 폴더 추출기(텍스트 사본·패키지 색인) |

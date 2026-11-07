@@ -4,11 +4,11 @@ argument-hint: <게임이름> <이번 회차 지시·확정 결정>
 disable-model-invocation: true
 ---
 
-# /분석 — 게임 방향 분석 (범용)
+# /분석 — 게임 아틀라스: 게임 전체 분석과 방향 설정 (범용)
 
 입력: $ARGUMENTS (첫 단어가 게임 이름, 나머지가 이번 회차 지시)
 
-사용자가 이 명령을 입력한 것 자체가 `game-debate` 워크플로우 실행에 대한 명시적 동의다. 방식 전체는 `분석_방식.md`에 있다.
+사용자가 이 명령을 입력한 것 자체가 `game-atlas` 워크플로우 실행에 대한 명시적 동의다. 방식 전체는 `분석_방식.md`에 있다.
 
 ## 1. 사전 확인 (짧게)
 - `게임/<게임이름>/설정.json`과 `추출/요약.md`가 있어야 한다. 없으면 `/새게임`을 먼저 하라고 안내하고 멈춘다.
@@ -21,7 +21,7 @@ disable-model-invocation: true
 - 사용자가 새 자료를 줬으면 `게임/<이름>/자료/`에 복사하고 `설정.json`의 `materials`에 추가한다.
 
 ## 2. 워크플로우 실행
-`Workflow` 도구를 `name: "game-debate"`로 호출한다. `game`에는 설정.json 내용을 객체 그대로 넣는다(문자열 금지).
+`Workflow` 도구를 `name: "game-atlas"`로 호출한다. `game`에는 설정.json 내용을 객체 그대로 넣는다(문자열 금지).
 
 ```json
 { "home": "<작업 폴더 절대경로>/게임/<이름>", "game": { ...설정.json... }, "note": "<지시>", "base": "<이전 json 절대경로 또는 빈 문자열>", "maxRounds": 24, "research": [], "mediateAfter": 3, "verify": true, "debateModel": "sonnet", "strongModel": "opus", "org": "<회사 이름>" }

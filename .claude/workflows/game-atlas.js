@@ -1,6 +1,6 @@
 export const meta = {
-  name: 'game-debate',
-  description: '게임 방향 분석(범용) — APK 추출본·사내 자료로 기초 조사 후, 설계자/검토자(Sonnet)가 관점을 돌며 분석하고 판정자(Opus)가 사실 검증·쟁점 판정, 셋이 모두 합의하면 종료 (파일 수정 없음)',
+  name: 'game-atlas',
+  description: '게임 아틀라스: 게임 전체 분석·방향 설정(범용) — APK 추출본·사내 자료로 기초 조사 후, 설계자/검토자(Sonnet)가 관점을 돌며 분석하고 판정자(Opus)가 사실 검증·쟁점 판정, 셋이 모두 합의하면 종료 (파일 수정 없음)',
   whenToUse: '/분석 스킬에서 호출. args: {home, game(설정.json 내용), note, base, maxRounds, research(선택: 이어하는 회차에서 추가로 돌릴 조사 갈래 이름 배열), mediateAfter(선택: 같은 설계·같은 반대가 몇 번 되풀이되면 중재 요청, 기본 3, 0이면 끔), resume(중재 대기 결과의 resume 객체), mediation(사용자 중재 내용), verify(선택: 사실 검증, 기본 true), verifyMax(선택: 검증할 근거 수, 기본 25), debateModel(선택: 설계자·검토자 모델, 기본 sonnet), strongModel(선택: 조사·검증·판정자 모델, 기본 opus), org(선택: 분석을 맡긴 회사 이름 — 사내 사실 분류용)}',
   phases: [
     { title: '기초 조사', detail: '첫 회차에만(또는 args.research로 지정한 갈래만) — 게임데이터·BM구조·여론·시장·원작 5갈래 병렬 조사' },

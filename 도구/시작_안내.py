@@ -7,7 +7,7 @@ root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 games_dir = os.path.join(root, '게임')
 games = sorted(d for d in os.listdir(games_dir) if not d.startswith('_') and os.path.isdir(os.path.join(games_dir, d))) if os.path.isdir(games_dir) else []
 
-msg = """[게임 분석] 사용법
+msg = """[게임 아틀라스] 사용법
 1) /새게임 <게임이름> <APK 경로> [목적·추가 자료]
    예) /새게임 예시게임 C:\\Users\\<사용자>\\Downloads\\game.xapk 경쟁작 벤치마크, 매출 자료 없음
 2) /분석 <게임이름> <이번 회차 지시·확정 결정>
