@@ -1,0 +1,6 @@
+# 사내 자료·APK·추출본·결과물은 올리지 않음 (게임별 폴더 전체 제외, 템플릿만 포함)
+게임/*
+!게임/_템플릿/
+__pycache__/
+*.pyc
+.claude/settings.local.json
