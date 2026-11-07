@@ -120,7 +120,6 @@ flowchart TD
 | `.claude/skills/분석/` | `/분석` 스킬 (워크플로우 실행, 중재, 결과 정리) |
 | `.claude/workflows/game-atlas.js` | 분석 워크플로우 본체 |
 | `.claude/settings.json` | 세션 시작 시 사용법을 보여 주는 훅 |
-| `게임 아틀라스 - Claude 열기.bat` | Windows Terminal에서 이 폴더로 Claude Code를 여는 실행 파일 |
 | `도구/apk_추출.py` | APK/XAPK/APKS/OBB 추출 (엔진 판별, 데이터 파일, 한글 문자열, 코드 식별자, 상품 ID 후보, SDK) |
 | `도구/pc_추출.py` | 설치 완료 PC 클라이언트 폴더 추출 (텍스트 사본, 패키지 색인) |
 | `도구/근거_대조.py` | 결과 근거를 원본과 기계 대조 |
